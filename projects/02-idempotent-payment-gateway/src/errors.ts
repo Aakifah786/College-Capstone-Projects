@@ -4,3 +4,15 @@ export class IdempotencyConflictError extends Error {
     this.name = "IdempotencyConflictError";
   }
 }
+ export class PaymentPersistenceError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "PaymentPersistenceError";
+  }
+}
+ export class ProcessorOutcomeUnknownError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "ProcessorOutcomeUnknownError";
+  }
+}
